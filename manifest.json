@@ -2,10 +2,9 @@
   "id": "/",
   "name": "Marcador Truco Acker",
   "short_name": "Truco Acker",
-  "description": "Marcador de pontos para Truco com voz, times e jogadores editáveis, histórico e exportação.",
-  "lang": "pt-BR",
-  "start_url": "./",
-  "scope": "./",
+  "description": "Marcador de Pontos para Truco com Voz, Times e Jogadores Editáveis, Histórico e Exportação.",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#2d2d2d",
@@ -23,5 +22,6 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "lang": "pt-BR"
 }
