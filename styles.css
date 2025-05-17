@@ -1,0 +1,408 @@
+/* --- Variáveis de Cor para Temas --- */
+:root {
+    /* Tema Escuro (Padrão) */
+    --bg-color: #1f1f1f;
+    --scoreboard-bg: #2d2d2d;
+    --section-bg: #3a3a3a;
+    --section-bg-alt: #3f3f3f;
+    --section-bg-hist: #333;
+    --text-color: #e0e0e0;
+    --text-color-light: #c0c0c0;
+    --text-color-lighter: #b0b0b0;
+    --text-color-muted: #a0a0a0;
+    --title-color: #ffffff;
+    --border-color: #444;
+    --border-color-light: #555;
+    --border-color-dark: #333;
+    --accent-nos: #69b1ff;
+    --accent-eles: #ff8787;
+    --button-bg: #4f4f4f;
+    --button-hover-bg: #5f5f5f;
+    --button-active-bg: #444;
+    --button-border: #666;
+    --button-text: #e0e0e0;
+    --button-add-bg: #387266;
+    --button-add-hover: #418a7b;
+    --button-add-active: #316a5e;
+    --button-add-text: #63e6be;
+    --button-add-border: #4aab87;
+    --button-add-border-bottom: #2b5a4f;
+    --button-remove-bg: #8d4444;
+    --button-remove-hover: #a15555;
+    --button-remove-active: #7a3b3b;
+    --button-remove-text: #ff8787;
+    --button-remove-border: #a75b5b;
+    --button-remove-border-bottom: #6b3333;
+    --button-truco-bg: #365b7a;
+    --button-truco-hover: #427094;
+    --button-truco-active: #2f516d;
+    --button-truco-text: #91d5ff;
+    --button-truco-border: #4a8ab3;
+    --button-truco-border-bottom: #2a4a66;
+    --button-action-text: #1f1f1f;
+    --button-edit-bg: #96f2d7;
+    --button-edit-hover: #a3f5e0;
+    --button-edit-active: #75e0c1;
+    --button-edit-border: #54c7a8;
+    --button-edit-border-bottom: #36a184;
+    --button-reset-game-bg: #ffe066;
+    --button-reset-game-hover: #ffea80;
+    --button-reset-game-active: #e6c84d;
+    --button-reset-game-border: #e6c84d;
+    --button-reset-game-border-bottom: #ccae33;
+    --button-reset-all-bg: #ff8787;
+    --button-reset-all-hover: #ff9b9b;
+    --button-reset-all-active: #e06767;
+    --button-reset-all-border: #e06767;
+    --button-reset-all-border-bottom: #cc4d4d;
+    --button-undo-bg: #74c0fc;
+    --button-undo-hover: #8bc9fd;
+    --button-undo-active: #4dabf7;
+    --button-undo-border: #4a8ab3;
+    --button-undo-border-bottom: #2f516d;
+    --button-export-bg: #82c91e;
+    --button-export-hover: #96d43b;
+    --button-export-active: #74b81a;
+    --button-export-border: #74b81a;
+    --button-export-border-bottom: #629d16;
+    --button-change-mode-bg: #fcc419;
+    --button-change-mode-hover: #fdd835;
+    --button-change-mode-active: #fbc02d;
+    --button-change-mode-border: #fbc02d;
+    --button-change-mode-border-bottom: #f5b000;
+    --button-disabled-bg: #666;
+    --button-disabled-text: #aaa;
+    --button-disabled-border: #555;
+    --shadow-color: rgba(0,0,0,0.1);
+    --shadow-color-darker: rgba(0,0,0,0.15);
+    --shadow-color-darkest: rgba(0,0,0,0.2);
+}
+
+body.light-theme {
+    --bg-color: #f0f0f0;
+    --scoreboard-bg: #ffffff;
+    --section-bg: #f8f9fa;
+    --section-bg-alt: #e9ecef;
+    --section-bg-hist: #f1f3f5;
+    --text-color: #212529;
+    --text-color-light: #495057;
+    --text-color-lighter: #6c757d;
+    --text-color-muted: #555;
+    --title-color: #000000;
+    --border-color: #dee2e6;
+    --border-color-light: #ced4da;
+    --border-color-dark: #adb5bd;
+    --accent-nos: #007bff;
+    --accent-eles: #dc3545;
+    --button-bg: #e9ecef;
+    --button-hover-bg: #dee2e6;
+    --button-active-bg: #ced4da;
+    --button-border: #ced4da;
+    --button-text: #212529;
+    --button-add-bg: #d1e7dd;
+    --button-add-hover: #badbcc;
+    --button-add-active: #a2cfbb;
+    --button-add-text: #0f5132;
+    --button-add-border: #a3cfbb;
+    --button-add-border-bottom: #82b3a0;
+    --button-remove-bg: #f8d7da;
+    --button-remove-hover: #f1c2c6;
+    --button-remove-active: #e9aab1;
+    --button-remove-text: #842029;
+    --button-remove-border: #f5c6cb;
+    --button-remove-border-bottom: #d3a0a6;
+    --button-truco-bg: #cce5ff;
+    --button-truco-hover: #b8daff;
+    --button-truco-active: #a3cdff;
+    --button-truco-text: #004085;
+    --button-truco-border: #b8daff;
+    --button-truco-border-bottom: #93b9e6;
+    --button-action-text: #212529;
+    --button-edit-bg: #a3f5e0;
+    --button-edit-hover: #b7f7e6;
+    --button-edit-active: #89e8d0;
+    --button-edit-border: #89e8d0;
+    --button-edit-border-bottom: #69d1b7;
+    --button-reset-game-bg: #fff3cd;
+    --button-reset-game-hover: #ffeebb;
+    --button-reset-game-active: #ffe8a8;
+    --button-reset-game-border: #ffeeba;
+    --button-reset-game-border-bottom: #e6cf9a;
+    --button-reset-all-bg: #f8d7da;
+    --button-reset-all-hover: #f1c2c6;
+    --button-reset-all-active: #e9aab1;
+    --button-reset-all-border: #f5c6cb;
+    --button-reset-all-border-bottom: #d3a0a6;
+    --button-undo-bg: #cfe2ff;
+    --button-undo-hover: #dbe7ff;
+    --button-undo-active: #c0d4f5;
+    --button-undo-border: #b6d4fe;
+    --button-undo-border-bottom: #9bbbe8;
+    --button-export-bg: #a0e06c;
+    --button-export-hover: #b0e888;
+    --button-export-active: #90d050;
+    --button-export-border: #90d050;
+    --button-export-border-bottom: #80c040;
+    --button-change-mode-bg: #ffd966;
+    --button-change-mode-hover: #ffe082;
+    --button-change-mode-active: #fccf40;
+    --button-change-mode-border: #fccf40;
+    --button-change-mode-border-bottom: #f9c722;
+    --button-disabled-bg: #e9ecef;
+    --button-disabled-text: #adb5bd;
+    --button-disabled-border: #dee2e6;
+    --shadow-color: rgba(0,0,0,0.07);
+    --shadow-color-darker: rgba(0,0,0,0.1);
+    --shadow-color-darkest: rgba(0,0,0,0.12);
+}
+
+/* --- Estilos Gerais --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: flex; justify-content: center; align-items: flex-start;
+    min-height: 100vh; background-color: var(--bg-color); color: var(--text-color);
+    margin: 0; padding: 15px; box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+.scoreboard {
+    background-color: var(--scoreboard-bg); padding: 15px 20px; border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color-darker); text-align: center;
+    width: 100%; max-width: 500px; box-sizing: border-box;
+    border: 1px solid var(--border-color); position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+h1 {
+    color: var(--title-color);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-shadow: 0 1px 2px var(--shadow-color-darkest);
+    position: relative;
+}
+h2, h3, h4 { color: var(--text-color-light); font-weight: 500; }
+hr { border: none; border-top: 1px solid var(--border-color); margin: 25px 0; }
+
+.hidden { display: none !important; }
+
+/* --- Seção Cronômetro --- */
+.timer-section {
+    padding: 8px 12px;
+    padding-right: 48px; /* Espaço para os botões de configuração à direita */
+    margin-bottom: 15px;
+    background-color: var(--section-bg);
+    border: 1px solid var(--border-color-light);
+    border-radius: 8px;
+    text-align: center;
+    position: relative; /* Essencial para posicionar .top-config-buttons */
+    min-height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.timer-section h3 { margin: 0 0 2px 0; font-size: 0.8em; color: var(--text-color-lighter); font-weight: 400; }
+#current-timer-display {
+    font-size: 1.5em;
+    font-weight: 700; color: var(--text-color);
+    font-family: 'SF Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    display:block; margin: 0; padding: 1px 0;
+}
+
+/* --- Botões de Configuração (DENTRO DO TIMER SECTION) --- */
+.top-config-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    z-index: 10;
+}
+#theme-toggle-btn, #sound-toggle-btn {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--button-border);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 0.9em;
+    cursor: pointer;
+    display: flex; justify-content: center; align-items: center; padding: 0;
+    transition: background-color 0.2s, color 0.2s, transform 0.15s;
+    box-shadow: 0 1px 2px var(--shadow-color);
+}
+#theme-toggle-btn:hover, #sound-toggle-btn:hover { background-color: var(--button-hover-bg); }
+#theme-toggle-btn:active, #sound-toggle-btn:active {
+    transform: translateY(-50%) scale(0.92); /* Mantém o translateY se estiver usando para centralizar */
+    /* Se o translateY(-50%) for apenas no container .top-config-buttons, então só scale aqui: */
+    /* transform: scale(0.92); */
+}
+
+
+/* --- Seção Partidas Ganhas --- */
+.match-wins-section {
+    background-color: var(--section-bg-alt); padding:10px 15px; border-radius:8px;
+    margin-bottom:15px; border:1px solid var(--border-color-light);
+}
+.match-wins-section h2 { margin:0 0 8px 0; font-size:1.1em; color: var(--text-color-light); }
+.match-wins-display { font-size:1.5em; font-weight:700; color: var(--text-color); }
+.match-wins-display .nos { color: var(--accent-nos); }
+.match-wins-display .eles { color: var(--accent-eles); }
+.match-wins-display span { display:inline-block; min-width:30px; }
+
+/* --- Seção Embaralhador --- */
+.dealer-section {
+    padding: 10px 15px; margin-bottom:20px; background-color: var(--section-bg);
+    border:1px solid var(--border-color-light); border-radius:8px;
+}
+.dealer-section h3 { margin: 2px 0 5px 0; font-size:1em; color: var(--text-color-lighter); font-weight: 400; }
+#current-dealer-name {
+    font-size:1.35em; font-weight:600; color: var(--text-color);
+    min-height: 1.4em; line-height: 1.4em; margin: 0 0 8px 0; word-break: break-word;
+}
+#next-dealer-btn {
+    margin-top: 5px; padding: 8px 15px; font-size: .9em;
+    background-color: var(--button-bg); color: var(--button-text);
+    border:1px solid var(--button-border); border-bottom-width: 3px;
+    border-radius:6px; cursor:pointer;
+    transition: background-color .2s, transform .1s ease-out, box-shadow .1s ease-out;
+    box-shadow:0 2px 3px var(--shadow-color-darker);
+}
+#next-dealer-btn:hover { background-color: var(--button-hover-bg); }
+#next-dealer-btn:active {
+    background-color: var(--button-active-bg); transform:translateY(1px);
+    border-bottom-width:2px; box-shadow:0 1px 2px var(--shadow-color-darkest);
+}
+
+/* --- Seção Times --- */
+.teams {
+    display:flex; justify-content:space-around; gap:15px;
+    margin-bottom:10px; flex-wrap:wrap;
+}
+.team {
+    display:flex; flex-direction:column; align-items:center; padding:15px;
+    border:1px solid var(--border-color-light); background-color: var(--section-bg-hist);
+    border-radius:10px; min-width:130px; flex-basis:calc(50% - 10px);
+    flex-grow:1; box-sizing:border-box; margin-bottom:10px;
+}
+.team h2 { margin-top:0; margin-bottom:12px; color: var(--text-color-light); font-size:1.25em; font-weight:600; }
+.score {
+    font-size:3.8em; font-weight:700; margin-bottom:18px;
+    min-height:1.2em; line-height:1; text-shadow:0 1px 3px var(--shadow-color-darker);
+}
+.team .score.nos { color: var(--accent-nos); }
+.team .score.eles { color: var(--accent-eles); }
+
+/* --- Controles de Pontuação --- */
+.controls {
+    display:grid; grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+    gap:8px; width: 100%; margin-top: 5px;
+}
+.controls button {
+    border-radius: 6px; padding: 10px 8px; font-size: 1.1em; font-weight: 500;
+    cursor: pointer; min-width: 40px;
+    transition: background-color .15s, transform .1s, box-shadow .15s, opacity .15s;
+    user-select: none; -webkit-user-select:none; -ms-user-select:none;
+    border-style: solid; border-width: 1px; border-bottom-width: 3px;
+    box-shadow: 0 2px 3px var(--shadow-color);
+}
+.controls button:disabled {
+    background-color: var(--button-disabled-bg) !important;
+    color: var(--button-disabled-text) !important;
+    border-color: var(--button-disabled-border) !important;
+    border-bottom-color: var(--button-disabled-border) !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+    opacity: 0.5 !important;
+}
+.controls button:active:not(:disabled) { transform: translateY(1px) scale(.97); border-bottom-width: 2px; box-shadow: 0 1px 2px var(--shadow-color-darkest); }
+.controls .add { color: var(--button-add-text); border-color: var(--button-add-border); background-color: var(--button-add-bg); border-bottom-color: var(--button-add-border-bottom); }
+.controls .add:hover:not(:disabled) { background-color: var(--button-add-hover); }
+.controls .add:active:not(:disabled) { background-color: var(--button-add-active); }
+.controls .remove { color: var(--button-remove-text); border-color: var(--button-remove-border); background-color: var(--button-remove-bg); border-bottom-color: var(--button-remove-border-bottom); }
+.controls .remove:hover:not(:disabled) { background-color: var(--button-remove-hover); }
+.controls .remove:active:not(:disabled) { background-color: var(--button-remove-active); }
+.controls .truco-btn { color: var(--button-truco-text); border-color: var(--button-truco-border); background-color: var(--button-truco-bg); border-bottom-color: var(--button-truco-border-bottom); }
+.controls .truco-btn:hover:not(:disabled) { background-color: var(--button-truco-hover); }
+.controls .truco-btn:active:not(:disabled) { background-color: var(--button-truco-active); }
+
+
+/* --- Botão Desfazer --- */
+.undo-section { text-align: center; margin-top: 20px; margin-bottom: 25px; }
+#undo-button {
+    padding: 10px 20px; font-size: 0.95em; font-weight: bold; border-radius: 6px;
+    cursor: pointer; border: 1px solid var(--button-undo-border);
+    border-bottom: 3px solid var(--button-undo-border-bottom);
+    transition: background-color .2s, transform .1s ease-out, box-shadow .1s ease-out;
+    background-color: var(--button-undo-bg); color: var(--button-action-text);
+    box-shadow: 0 2px 3px var(--shadow-color-darker);
+}
+#undo-button:hover:not(:disabled) { background-color: var(--button-undo-hover); }
+#undo-button:active:not(:disabled) { background-color: var(--button-undo-active); transform: translateY(1px); border-bottom-width: 2px; box-shadow: 0 1px 2px var(--shadow-color-darkest); }
+#undo-button:disabled {
+    background-color: var(--button-disabled-bg); color: var(--button-disabled-text);
+    border: 1px solid var(--button-disabled-border); border-bottom: 1px solid var(--button-disabled-border);
+    cursor: not-allowed; opacity: 0.7; box-shadow: none; transform: none;
+}
+
+/* --- Histórico de Pontos Anteriores --- */
+.history-section { margin-top:0; padding-top:15px; border-top:1px solid var(--border-color); text-align:center; }
+.history-section h3 { margin-top:0; margin-bottom:10px; font-size:1em; color: var(--text-color-lighter); font-weight: 400; }
+.history-score { font-size:1.2em; color: var(--text-color-light); }
+.history-score span { font-weight:700; display:inline-block; min-width:25px; }
+.history-score .nos { color: var(--accent-nos); }
+.history-score .eles { color: var(--accent-eles); }
+
+/* --- Botões de Ação --- */
+.action-buttons {
+    margin-top:30px; padding-top:20px; border-top:1px solid var(--border-color);
+    display:flex; flex-direction:column; align-items:center; gap:12px;
+}
+.action-buttons button {
+    padding: 12px 22px; font-size: 0.95em; font-weight: 500; border-radius: 8px;
+    cursor: pointer; border-style: solid; border-width: 1px; border-bottom-width: 3px;
+    transition: background-color .2s, transform .1s ease-out, box-shadow .1s ease-out;
+    width: 90%; max-width: 320px; color: var(--button-action-text);
+    box-shadow: 0 2px 4px var(--shadow-color-darker);
+}
+.action-buttons button:active { transform: translateY(1px); border-bottom-width: 2px; box-shadow: 0 1px 2px var(--shadow-color-darkest); }
+#edit-teams-btn, #edit-players-btn { background-color: var(--button-edit-bg); border-color: var(--button-edit-border); border-bottom-color: var(--button-edit-border-bottom); }
+#edit-teams-btn:hover, #edit-players-btn:hover { background-color: var(--button-edit-hover); }
+#edit-teams-btn:active, #edit-players-btn:active { background-color: var(--button-edit-active); }
+.reset-game-button { background-color: var(--button-reset-game-bg); border-color: var(--button-reset-game-border); border-bottom-color: var(--button-reset-game-border-bottom); }
+.reset-game-button:hover { background-color: var(--button-reset-game-hover); }
+.reset-game-button:active { background-color: var(--button-reset-game-active); }
+.reset-all-button { background-color: var(--button-reset-all-bg); border-color: var(--button-reset-all-border); border-bottom-color: var(--button-reset-all-border-bottom); }
+.reset-all-button:hover { background-color: var(--button-reset-all-hover); }
+.reset-all-button:active { background-color: var(--button-reset-all-active); }
+#change-game-mode-btn { background-color: var(--button-change-mode-bg); border-color: var(--button-change-mode-border); border-bottom-color: var(--button-change-mode-border-bottom); }
+#change-game-mode-btn:hover { background-color: var(--button-change-mode-hover); }
+#change-game-mode-btn:active { background-color: var(--button-change-mode-active); }
+#export-history-btn { background-color: var(--button-export-bg); border-color: var(--button-export-border); border-bottom-color: var(--button-export-border-bottom); }
+#export-history-btn:hover { background-color: var(--button-export-hover); }
+#export-history-btn:active { background-color: var(--button-export-active); }
+
+/* --- Histórico de Duração das Partidas --- */
+.duration-history-section {
+    margin-top: 25px; margin-bottom: 25px; padding: 15px;
+    background-color: var(--section-bg-hist); border: 1px solid var(--border-color);
+    border-radius: 8px; text-align: left;
+}
+.duration-history-section h4 { margin-top: 0; margin-bottom: 10px; font-size: 0.95em; color: var(--text-color-light); text-align: center; font-weight: 500; }
+#duration-history-list {
+    list-style: none; padding: 0; margin: 0; max-height: 120px; overflow-y: auto;
+    font-size: 0.9em; color: var(--text-color-light);
+    font-family: 'SF Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+}
+#duration-history-list li { padding: 4px 8px; border-bottom: 1px dashed var(--border-color-light); display: flex; justify-content: space-between; align-items: center; }
+#duration-history-list li:last-child { border-bottom: none; }
+.winner-icon { font-size: 1em; font-weight: bold; margin-left: 8px; font-style: normal; display: inline-block; }
+.winner-icon.nos { color: var(--accent-nos); }
+.winner-icon.eles { color: var(--accent-eles); }
+
+/* --- Rodapé --- */
+.footer-credit { margin-top: 30px; padding-top: 15px; border-top: 1px solid var(--border-color); font-size: 0.8em; color: var(--text-color-muted); text-align: center; }
+.footer-credit p { margin: 0; padding: 0; }

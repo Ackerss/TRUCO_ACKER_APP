@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f1f1f" id="theme-color-meta">
+    <title>Marcador Truco Acker</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').then(registration => {
+                    console.log('SW registrado:', registration.scope);
+                }, function(err) {
+                    console.log('Falha no registro do SW:', err);
+                });
+            });
+        }
+    </script>
+</head>
+<body class="dark-theme">
+
+<div class="scoreboard">
+    <h1 id="main-title">Marcador Truco Acker</h1>
+
+    <div class="timer-section">
+        <div class="top-config-buttons">
+            <button id="theme-toggle-btn" title="Alternar Tema">☀️</button>
+            <button id="sound-toggle-btn" title="Alternar Som">🔊</button>
+        </div>
+        <h3>Tempo do Jogo Atual:</h3>
+        <p id="current-timer-display">00:00</p>
+    </div>
+
+    <div class="match-wins-section">
+        <h2>Partidas Ganhas</h2>
+        <div class="match-wins-display">
+            <span id="match-wins-nos" class="nos">0</span> vs <span id="match-wins-eles" class="eles">0</span>
+        </div>
+    </div>
+
+    <div class="dealer-section">
+        <h3>Embaralhador Atual:</h3>
+        <p id="current-dealer-name">-- Carregando --</p>
+        <button id="next-dealer-btn">Próximo Embaralhador</button>
+    </div>
+
+    <hr>
+    <div class="teams">
+        <div class="team">
+            <h2 id="team-name-nos">Nós</h2>
+            <div id="score-nos" class="score nos">0</div>
+            <div class="controls">
+                <button class="remove" data-team="nos" data-amount="-1" aria-label="Remover 1 ponto">-1</button>
+                <button class="add" data-team="nos" data-amount="1" data-speak="um ponto" aria-label="Adicionar 1 ponto">+1</button>
+                <button class="truco-btn" data-team="nos" data-amount="3" data-speak="Truco" aria-label="Adicionar 3 pontos">+3</button>
+                <button class="truco-btn" data-team="nos" data-amount="6" data-speak="Seis" aria-label="Adicionar 6 pontos">+6</button>
+                <button class="truco-btn" data-team="nos" data-amount="9" data-speak="Nove" aria-label="Adicionar 9 pontos">+9</button>
+                <button class="truco-btn" data-team="nos" data-amount="12" data-speak="Doze" aria-label="Adicionar 12 pontos">+12</button>
+            </div>
+        </div>
+        <div class="team">
+            <h2 id="team-name-eles">Eles</h2>
+            <div id="score-eles" class="score eles">0</div>
+            <div class="controls">
+                <button class="remove" data-team="eles" data-amount="-1" aria-label="Remover 1 ponto">-1</button>
+                <button class="add" data-team="eles" data-amount="1" data-speak="um ponto" aria-label="Adicionar 1 ponto">+1</button>
+                <button class="truco-btn" data-team="eles" data-amount="3" data-speak="Truco" aria-label="Adicionar 3 pontos">+3</button>
+                <button class="truco-btn" data-team="eles" data-amount="6" data-speak="Seis" aria-label="Adicionar 6 pontos">+6</button>
+                <button class="truco-btn" data-team="eles" data-amount="9" data-speak="Nove" aria-label="Adicionar 9 pontos">+9</button>
+                <button class="truco-btn" data-team="eles" data-amount="12" data-speak="Doze" aria-label="Adicionar 12 pontos">+12</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="undo-section">
+        <button id="undo-button" disabled>Desfazer Última Ação</button>
+    </div>
+
+    <hr>
+    <div class="history-section">
+        <h3>Placar Anterior (Jogo Atual)</h3>
+        <div class="history-score">
+            <span id="prev-score-nos" class="nos">-</span> a <span id="prev-score-eles" class="eles">-</span>
+        </div>
+    </div>
+
+    <div class="duration-history-section">
+        <h4>Histórico de Duração das Partidas:</h4>
+        <ul id="duration-history-list">
+            <li>Carregando histórico...</li>
+        </ul>
+    </div>
+
+    <div class="action-buttons">
+        <button id="edit-teams-btn">Editar Nomes das Equipes</button>
+        <button id="edit-players-btn">Editar Nomes dos Jogadores</button>
+        <button class="reset-game-button" id="reset-game-btn">Reiniciar Jogo Atual</button>
+        <button class="reset-all-button" id="reset-all-btn">Zerar Placar Geral</button>
+        <button id="change-game-mode-btn">Trocar Modo de Jogo</button>
+        <button id="export-history-btn">Exportar Histórico (WhatsApp)</button>
+    </div>
+
+    <div class="footer-credit">
+        <p id="footer-text">Desenvolvido por Jacson A Duarte</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
