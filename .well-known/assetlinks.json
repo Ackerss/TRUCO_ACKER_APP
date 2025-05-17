@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.ackerss.trucoacker",
+        "sha256_cert_fingerprints": ["FA:E1:AD:14:3F:76:DC:24:E0:05:5A:39:84:71:78:2C:70:BC:ED:78:B8:21:83:C0:70:F9:85:77:0F:47:91:C7"]
+      }
+    }]
