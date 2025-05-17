@@ -4,44 +4,27 @@
   "short_name": "Truco Acker",
   "description": "Marcador de pontos para Truco com voz, times e jogadores editáveis, histórico e exportação.",
   "lang": "pt-BR",
+
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
+
   "background_color": "#2d2d2d",
   "theme_color": "#1f1f1f",
+
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"           // ← Ícone “normal”
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"      // ← Ícone “cortável” para Android
     }
-  ],
-  "screenshots": [
-    {
-      "src": "screenshot1.png",
-      "type": "image/png",
-      "sizes": "1080x1920"
-    },
-    {
-      "src": "screenshot2.png",
-      "type": "image/png",
-      "sizes": "1080x1920"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Novo jogo rápido",
-      "url": "/?newGame=true",
-      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
-    }
-  ],
-  "categories": ["games", "utilities"]
+  ]
 }
